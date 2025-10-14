@@ -1,0 +1,374 @@
+=== Árvore C4.5 ===
+Atributo: Sex
+-> Valor: female
+  Atributo: Pclass (limite: 2.0)
+  -> Valor: <= 2.000
+    Atributo: Age (limite: 2.0)
+    -> Valor: <= 2.000
+      Atributo: Parch (limite: 1.5)
+      -> Valor: <= 1.500
+        Folha: classe = 1
+      -> Valor: > 1.500
+        Folha: classe = 0
+    -> Valor: > 2.000
+      Atributo: Fare (limite: 28.85625)
+      -> Valor: <= 28.856
+        Atributo: Parch (limite: 1.0)
+        -> Valor: <= 1.000
+          Atributo: SibSp (limite: 1.0)
+          -> Valor: <= 1.000
+            Atributo: Embarked
+            -> Valor: S
+              Folha: classe = 1
+            -> Valor: C
+              Folha: classe = 1
+          -> Valor: > 1.000
+            Folha: classe = 1
+        -> Valor: > 1.000
+          Folha: classe = 1
+      -> Valor: > 28.856
+        Atributo: Embarked
+        -> Valor: C
+          Folha: classe = 1
+        -> Valor: S
+          Atributo: SibSp (limite: 1.0)
+          -> Valor: <= 1.000
+            Atributo: Parch (limite: 2.0)
+            -> Valor: <= 2.000
+              Folha: classe = 1
+            -> Valor: > 2.000
+              Folha: classe = 1
+          -> Valor: > 1.000
+            Folha: classe = 1
+  -> Valor: > 2.000
+    Atributo: Age (limite: 38.5)
+    -> Valor: <= 38.500
+      Atributo: Fare (limite: 20.799999999999997)
+      -> Valor: <= 20.800
+        Atributo: Parch (limite: 1.0)
+        -> Valor: <= 1.000
+          Atributo: SibSp (limite: 1.0)
+          -> Valor: <= 1.000
+            Atributo: Embarked
+            -> Valor: S
+              Folha: classe = 1
+            -> Valor: Q
+              Folha: classe = 0
+            -> Valor: C
+              Folha: classe = 1
+          -> Valor: > 1.000
+            Folha: classe = 0
+        -> Valor: > 1.000
+          Folha: classe = 1
+      -> Valor: > 20.800
+        Atributo: Parch (limite: 4.5)
+        -> Valor: <= 4.500
+          Folha: classe = 0
+        -> Valor: > 4.500
+          Folha: classe = 1
+    -> Valor: > 38.500
+      Folha: classe = 0
+-> Valor: male
+  Atributo: Fare (limite: 387.6646)
+  -> Valor: <= 387.665
+    Atributo: Age (limite: 75.5)
+    -> Valor: <= 75.500
+      Atributo: Parch (limite: 2.0)
+      -> Valor: <= 2.000
+        Atributo: SibSp (limite: 4.0)
+        -> Valor: <= 4.000
+          Atributo: Embarked
+          -> Valor: S
+            Atributo: Pclass (limite: 1.0)
+            -> Valor: <= 1.000
+              Folha: classe = 0
+            -> Valor: > 1.000
+              Folha: classe = 0
+          -> Valor: C
+            Atributo: Pclass (limite: 1.0)
+            -> Valor: <= 1.000
+              Folha: classe = 0
+            -> Valor: > 1.000
+              Folha: classe = 0
+          -> Valor: Q
+            Atributo: Pclass (limite: 3.0)
+            -> Valor: <= 3.000
+              Folha: classe = 0
+            -> Valor: > 3.000
+              Folha: classe = 0
+        -> Valor: > 4.000
+          Folha: classe = 0
+      -> Valor: > 2.000
+        Folha: classe = 0
+    -> Valor: > 75.500
+      Folha: classe = 1
+  -> Valor: > 387.665
+    Folha: classe = 1
+
+C4.5: Acurácia=0.7804  Precisão=0.7973  Recall=0.6484  F1=0.7152
+
+Scikit-learn Decision Tree: Acurácia=0.7664  Precisão=0.7412  Recall=0.6923  F1=0.7159
+
+=== Árvore Scikit-learn ===
+|--- Sex_female <= 0.50
+|   |--- Age <= 6.50
+|   |   |--- SibSp <= 2.50
+|   |   |   |--- class: 1
+|   |   |--- SibSp >  2.50
+|   |   |   |--- Fare <= 31.33
+|   |   |   |   |--- class: 0
+|   |   |   |--- Fare >  31.33
+|   |   |   |   |--- Age <= 2.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Age >  2.00
+|   |   |   |   |   |--- class: 1
+|   |--- Age >  6.50
+|   |   |--- Pclass <= 1.50
+|   |   |   |--- Age <= 38.50
+|   |   |   |   |--- Fare <= 387.66
+|   |   |   |   |   |--- Fare <= 127.82
+|   |   |   |   |   |   |--- Fare <= 86.09
+|   |   |   |   |   |   |   |--- Fare <= 77.01
+|   |   |   |   |   |   |   |   |--- Age <= 28.00
+|   |   |   |   |   |   |   |   |   |--- Age <= 21.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Age >  21.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Age >  28.00
+|   |   |   |   |   |   |   |   |   |--- Age <= 31.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Age >  31.50
+|   |   |   |   |   |   |   |   |   |   |--- Fare <= 52.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Fare >  52.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Fare >  77.01
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Fare >  86.09
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Fare >  127.82
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Fare >  387.66
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- Age >  38.50
+|   |   |   |   |--- Age <= 47.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Age >  47.50
+|   |   |   |   |   |--- Fare <= 97.76
+|   |   |   |   |   |   |--- Age <= 49.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Age >  49.50
+|   |   |   |   |   |   |   |--- Age <= 75.50
+|   |   |   |   |   |   |   |   |--- Age <= 60.50
+|   |   |   |   |   |   |   |   |   |--- Fare <= 43.68
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 54.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Age >  54.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Fare >  43.68
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 57.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Age >  57.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Age >  60.50
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Age >  75.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Fare >  97.76
+|   |   |   |   |   |   |--- class: 0
+|   |   |--- Pclass >  1.50
+|   |   |   |--- Age <= 25.50
+|   |   |   |   |--- Age <= 21.50
+|   |   |   |   |   |--- Fare <= 23.26
+|   |   |   |   |   |   |--- Fare <= 14.37
+|   |   |   |   |   |   |   |--- Embarked_C <= 0.50
+|   |   |   |   |   |   |   |   |--- Fare <= 7.79
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Fare >  7.79
+|   |   |   |   |   |   |   |   |   |--- Fare <= 7.80
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 19.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Age >  19.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Fare >  7.80
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 19.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- Age >  19.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Embarked_C >  0.50
+|   |   |   |   |   |   |   |   |--- Fare <= 5.62
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Fare >  5.62
+|   |   |   |   |   |   |   |   |   |--- Age <= 18.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Age >  18.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Fare >  14.37
+|   |   |   |   |   |   |   |--- Parch <= 0.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Parch >  0.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Fare >  23.26
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Age >  21.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Age >  25.50
+|   |   |   |   |--- Age <= 32.50
+|   |   |   |   |   |--- Fare <= 46.75
+|   |   |   |   |   |   |--- Age <= 30.75
+|   |   |   |   |   |   |   |--- Pclass <= 2.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Pclass >  2.50
+|   |   |   |   |   |   |   |   |--- Embarked_Q <= 0.50
+|   |   |   |   |   |   |   |   |   |--- Fare <= 8.36
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 29.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Age >  29.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Fare >  8.36
+|   |   |   |   |   |   |   |   |   |   |--- SibSp <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- SibSp >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Embarked_Q >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Age >  30.75
+|   |   |   |   |   |   |   |--- Fare <= 7.81
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Fare >  7.81
+|   |   |   |   |   |   |   |   |--- Fare <= 26.12
+|   |   |   |   |   |   |   |   |   |--- Pclass <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Pclass >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- Fare <= 8.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- Fare >  8.21
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Fare >  26.12
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Fare >  46.75
+|   |   |   |   |   |   |--- SibSp <= 1.00
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- SibSp >  1.00
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Age >  32.50
+|   |   |   |   |   |--- Fare <= 13.25
+|   |   |   |   |   |   |--- Fare <= 7.91
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Fare >  7.91
+|   |   |   |   |   |   |   |--- Fare <= 7.99
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Fare >  7.99
+|   |   |   |   |   |   |   |   |--- Fare <= 12.94
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Fare >  12.94
+|   |   |   |   |   |   |   |   |   |--- Age <= 45.00
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 36.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Age >  36.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Age >  45.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Fare >  13.25
+|   |   |   |   |   |   |--- class: 0
+|--- Sex_female >  0.50
+|   |--- Pclass <= 2.50
+|   |   |--- Age <= 2.50
+|   |   |   |--- Pclass <= 1.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- Pclass >  1.50
+|   |   |   |   |--- class: 1
+|   |   |--- Age >  2.50
+|   |   |   |--- Age <= 23.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- Age >  23.50
+|   |   |   |   |--- Age <= 26.50
+|   |   |   |   |   |--- Fare <= 110.43
+|   |   |   |   |   |   |--- Age <= 25.50
+|   |   |   |   |   |   |   |--- Fare <= 15.88
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Fare >  15.88
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Age >  25.50
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Fare >  110.43
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Age >  26.50
+|   |   |   |   |   |--- Age <= 37.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Age >  37.00
+|   |   |   |   |   |   |--- Fare <= 33.86
+|   |   |   |   |   |   |   |--- Fare <= 28.22
+|   |   |   |   |   |   |   |   |--- Age <= 39.00
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Age >  39.00
+|   |   |   |   |   |   |   |   |   |--- Age <= 55.50
+|   |   |   |   |   |   |   |   |   |   |--- SibSp <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- SibSp >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Age >  55.50
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 57.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Age >  57.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Fare >  28.22
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Fare >  33.86
+|   |   |   |   |   |   |   |--- class: 1
+|   |--- Pclass >  2.50
+|   |   |--- Fare <= 20.80
+|   |   |   |--- Age <= 36.50
+|   |   |   |   |--- Age <= 16.50
+|   |   |   |   |   |--- Age <= 11.00
+|   |   |   |   |   |   |--- Fare <= 10.80
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Fare >  10.80
+|   |   |   |   |   |   |   |--- Age <= 6.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Age >  6.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Age >  11.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Age >  16.50
+|   |   |   |   |   |--- Embarked_Q <= 0.50
+|   |   |   |   |   |   |--- Fare <= 7.76
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Fare >  7.76
+|   |   |   |   |   |   |   |--- Parch <= 0.50
+|   |   |   |   |   |   |   |   |--- Age <= 25.50
+|   |   |   |   |   |   |   |   |   |--- Fare <= 7.89
+|   |   |   |   |   |   |   |   |   |   |--- Age <= 18.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Age >  18.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Fare >  7.89
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Age >  25.50
+|   |   |   |   |   |   |   |   |   |--- Fare <= 7.91
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Fare >  7.91
+|   |   |   |   |   |   |   |   |   |   |--- Fare <= 8.29
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Fare >  8.29
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- Parch >  0.50
+|   |   |   |   |   |   |   |   |--- Age <= 27.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Age >  27.50
+|   |   |   |   |   |   |   |   |   |--- Fare <= 17.32
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Fare >  17.32
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Embarked_Q >  0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Age >  36.50
+|   |   |   |   |--- class: 0
+|   |   |--- Fare >  20.80
+|   |   |   |--- Parch <= 4.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- Parch >  4.50
+|   |   |   |   |--- Age <= 38.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Age >  38.50
+|   |   |   |   |   |--- class: 0
