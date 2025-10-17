@@ -69,8 +69,6 @@ class ArvoreID3:
                 # Chama a construção da árvore recursivamente para o subconjunto
                 no.filhos[valor] = self._construir_arvore(subset, atributos_restantes, coluna_alvo)
         return no
-
-    # ---- INÍCIO DAS FUNÇÕES DE PREVISÃO ADICIONADAS ----
     
     def predict(self, X_teste):
         """
@@ -100,11 +98,6 @@ class ArvoreID3:
         else:
             # Fallback: se o valor não foi visto no treino, retorna a classe majoritária geral
             return self.classe_majoritaria_geral
-
-    # ---- FIM DAS FUNÇÕES DE PREVISÃO ADICIONADAS ----
-
-# COPIE E COLE ESTES DOIS MÉTODOS DENTRO DA SUA CLASSE ArvoreID3
-# (Substituindo os métodos de impressão antigos)
 
     def imprimir_arvore(self):
         """Método público para iniciar a impressão da árvore a partir da raiz."""
