@@ -1,0 +1,138 @@
+✅ Modelo CART treinado com sucesso!
+
+============================================================
+ESTRUTURA DA ÁRVORE DE DECISÃO GERADA PELO CART
+============================================================
+Se 'Title_Mr' <= 0.500:
+  |-- V: Se 'Pclass_3' <= 0.500:
+  |-- V:   |-- V: Se 'Title_Rare' <= 0.500:
+  |-- V:   |-- V:   |-- V: Se 'Fare' <= 28.856:
+  |-- V:   |-- V:   |-- V:   |-- V: Se 'Age' <= 49.000:
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- V: Se 'Age' <= 25.000:
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- V:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- V: Senão:
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- V:   |-- F: Se 'Age' <= 28.500:
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- V:   |-- F:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- V:   |-- F: Senão:
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- V:   |-- F:   |-- F: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- V:   |-- V:   |-- V: Senão:
+  |-- V:   |-- V:   |-- V:   |-- V:   |-- F: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- V:   |-- V: Senão:
+  |-- V:   |-- V:   |-- V:   |-- F: Se 'FamilySize' <= 3.500:
+  |-- V:   |-- V:   |-- V:   |-- F:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- V:   |-- V:   |-- F: Senão:
+  |-- V:   |-- V:   |-- V:   |-- F:   |-- F: Se 'Age' <= 21.500:
+  |-- V:   |-- V:   |-- V:   |-- F:   |-- F:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- V:   |-- V:   |-- F:   |-- F: Senão:
+  |-- V:   |-- V:   |-- V:   |-- F:   |-- F:   |-- F: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- V: Senão:
+  |-- V:   |-- V:   |-- F: Se 'Fare' <= 29.110:
+  |-- V:   |-- V:   |-- F:   |-- V: Se 'Age' <= 50.000:
+  |-- V:   |-- V:   |-- F:   |-- V:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- V:   |-- F:   |-- V: Senão:
+  |-- V:   |-- V:   |-- F:   |-- V:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- V:   |-- F: Senão:
+  |-- V:   |-- V:   |-- F:   |-- F: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V: Senão:
+  |-- V:   |-- F: Se 'FamilySize' <= 4.500:
+  |-- V:   |-- F:   |-- V: Se 'Age' <= 7.500:
+  |-- V:   |-- F:   |-- V:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- F:   |-- V: Senão:
+  |-- V:   |-- F:   |-- V:   |-- F: Se 'Fare' <= 7.888:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- V: Se 'Age' <= 28.250:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- V:   |-- V: Se 'Age' <= 18.500:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- V:   |-- V: Senão:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- F: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- V: Senão:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- V:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- F:   |-- V:   |-- F: Senão:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F: Se 'Fare' <= 15.675:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- V: Se 'Fare' <= 13.465:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- V:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- V: Senão:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- V:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F: Senão:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- F: Se 'Embarked_S' <= 0.500:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- F:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- F: Senão:
+  |-- V:   |-- F:   |-- V:   |-- F:   |-- F:   |-- F:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- F: Senão:
+  |-- V:   |-- F:   |-- F: Se 'FamilySize' <= 6.500:
+  |-- V:   |-- F:   |-- F:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- F:   |-- F: Senão:
+  |-- V:   |-- F:   |-- F:   |-- F: Se 'Fare' <= 31.331:
+  |-- V:   |-- F:   |-- F:   |-- F:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- V:   |-- F:   |-- F:   |-- F: Senão:
+  |-- V:   |-- F:   |-- F:   |-- F:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+Senão:
+  |-- F: Se 'Fare' <= 26.269:
+  |-- F:   |-- V: Se 'Fare' <= 7.133:
+  |-- F:   |-- V:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- V: Senão:
+  |-- F:   |-- V:   |-- F: Se 'Age' <= 46.000:
+  |-- F:   |-- V:   |-- F:   |-- V: Se 'Age' <= 41.250:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V: Se 'Age' <= 32.500:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- V: Se 'Age' <= 30.500:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- V:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- V: Senão:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- V:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V: Senão:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- F: Se 'Fare' <= 13.700:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- F:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- F: Senão:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- V:   |-- F:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- V:   |-- F:   |-- V: Senão:
+  |-- F:   |-- V:   |-- F:   |-- V:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- V:   |-- F: Senão:
+  |-- F:   |-- V:   |-- F:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F: Senão:
+  |-- F:   |-- F: Se 'Fare' <= 26.775:
+  |-- F:   |-- F:   |-- V: Se 'Age' <= 43.500:
+  |-- F:   |-- F:   |-- V:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- F:   |-- F:   |-- V: Senão:
+  |-- F:   |-- F:   |-- V:   |-- F: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- F:   |-- F: Senão:
+  |-- F:   |-- F:   |-- F: Se 'Pclass_2' <= 0.500:
+  |-- F:   |-- F:   |-- F:   |-- V: Se 'Age' <= 49.500:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V: Se 'Fare' <= 52.277:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- V: Se 'Fare' <= 31.137:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- V:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- V: Senão:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- V:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V: Senão:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- F: Se 'Fare' <= 66.454:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- F:   |-- V: --> PREDIÇÃO: Sobreviveu (classe=1)
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- F: Senão:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- V:   |-- F:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- F:   |-- F:   |-- V: Senão:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- F: Se 'Age' <= 59.500:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- F:   |-- V: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- F: Senão:
+  |-- F:   |-- F:   |-- F:   |-- V:   |-- F:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  |-- F:   |-- F:   |-- F: Senão:
+  |-- F:   |-- F:   |-- F:   |-- F: --> PREDIÇÃO: Não Sobreviveu (classe=0)
+============================================================
+
+📊 Realizando previsões no conjunto de teste...
+✅ Previsões concluídas!
+
+==================================================
+MÉTRICAS DE DESEMPENHO DO MODELO CART
+==================================================
+Acurácia (Accuracy): 0.7982
+Precisão (Precision): 0.7971
+Revocação (Recall): 0.6395
+F1-Score: 0.7097
+==================================================
+
+Relatório de Classificação Completo:
+              precision    recall  f1-score   support
+
+           0       0.80      0.90      0.85       137
+           1       0.80      0.64      0.71        86
+
+    accuracy                           0.80       223
+   macro avg       0.80      0.77      0.78       223
+weighted avg       0.80      0.80      0.79       223
+

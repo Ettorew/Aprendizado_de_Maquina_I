@@ -1,0 +1,318 @@
+✅ Modelo c45 treinado com sucesso!
+
+============================================================
+ESTRUTURA DA ÁRVORE DE DECISÃO GERADA
+============================================================
+NÓ: Divisão Categórica por 'Sex'
+  - Se 'Sex' == 'female':
+    NÓ: Divisão Numérica por 'FamilySize'
+      - Se valor <= 7.000:
+        NÓ: Divisão Numérica por 'Fare'
+          - Se valor <= 6.987:
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se valor > 6.987:
+            NÓ: Divisão Categórica por 'Pclass'
+              - Se 'Pclass' == '1':
+                NÓ: Divisão Numérica por 'Age'
+                  - Se valor <= 49.500:
+                    NÓ: Divisão Categórica por 'Title'
+                      - Se 'Title' == 'Mrs':
+                        NÓ: Divisão Categórica por 'Embarked'
+                          - Se 'Embarked' == 'S':
+                            NÓ: Divisão Categórica por 'IsAlone'
+                              - Se 'IsAlone' == 'False':
+                                NÓ: Divisão Categórica por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                                  - Se 'AgeGroup' == 'Adolescente':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                              - Se 'IsAlone' == 'True':
+                                --> PREDIÇÃO: Sobreviveu (classe=1)
+                          - Se 'Embarked' == 'C':
+                            --> PREDIÇÃO: Sobreviveu (classe=1)
+                      - Se 'Title' == 'Miss':
+                        --> PREDIÇÃO: Sobreviveu (classe=1)
+                      - Se 'Title' == 'Rare':
+                        --> PREDIÇÃO: Sobreviveu (classe=1)
+                  - Se valor > 49.500:
+                    NÓ: Divisão Categórica por 'Title'
+                      - Se 'Title' == 'Mrs':
+                        --> PREDIÇÃO: Sobreviveu (classe=1)
+                      - Se 'Title' == 'Miss':
+                        NÓ: Divisão Categórica por 'IsAlone'
+                          - Se 'IsAlone' == 'True':
+                            NÓ: Divisão Categórica por 'Embarked'
+                              - Se 'Embarked' == 'C':
+                                NÓ: Divisão Categórica por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'IsAlone' == 'False':
+                            --> PREDIÇÃO: Sobreviveu (classe=1)
+              - Se 'Pclass' == '3':
+                NÓ: Divisão Numérica por 'Age'
+                  - Se valor <= 1.500:
+                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                  - Se valor > 1.500:
+                    NÓ: Divisão Categórica por 'IsAlone'
+                      - Se 'IsAlone' == 'False':
+                        NÓ: Divisão Categórica por 'Embarked'
+                          - Se 'Embarked' == 'S':
+                            NÓ: Divisão Categórica por 'AgeGroup'
+                              - Se 'AgeGroup' == 'Criança':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'AgeGroup' == 'Adulto':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Mrs':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'AgeGroup' == 'Adolescente':
+                                --> PREDIÇÃO: Sobreviveu (classe=1)
+                          - Se 'Embarked' == 'C':
+                            NÓ: Divisão Categórica por 'AgeGroup'
+                              - Se 'AgeGroup' == 'Adulto':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Mrs':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'AgeGroup' == 'Criança':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                              - Se 'AgeGroup' == 'Adolescente':
+                                --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'Embarked' == 'Q':
+                            NÓ: Divisão Categórica por 'Title'
+                              - Se 'Title' == 'Miss':
+                                --> PREDIÇÃO: Sobreviveu (classe=1)
+                              - Se 'Title' == 'Mrs':
+                                --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                      - Se 'IsAlone' == 'True':
+                        NÓ: Divisão Categórica por 'Embarked'
+                          - Se 'Embarked' == 'C':
+                            NÓ: Divisão Categórica por 'Title'
+                              - Se 'Title' == 'Mrs':
+                                --> PREDIÇÃO: Sobreviveu (classe=1)
+                              - Se 'Title' == 'Miss':
+                                NÓ: Divisão Categórica por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adolescente':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                          - Se 'Embarked' == 'S':
+                            NÓ: Divisão Categórica por 'AgeGroup'
+                              - Se 'AgeGroup' == 'Adolescente':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'AgeGroup' == 'Adulto':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'Title' == 'Mrs':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'AgeGroup' == 'Criança':
+                                --> PREDIÇÃO: Sobreviveu (classe=1)
+                              - Se 'AgeGroup' == 'Idoso':
+                                --> PREDIÇÃO: Sobreviveu (classe=1)
+                          - Se 'Embarked' == 'Q':
+                            NÓ: Divisão Categórica por 'AgeGroup'
+                              - Se 'AgeGroup' == 'Adulto':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                              - Se 'AgeGroup' == 'Adolescente':
+                                --> PREDIÇÃO: Sobreviveu (classe=1)
+              - Se 'Pclass' == '2':
+                NÓ: Divisão Numérica por 'Age'
+                  - Se valor <= 56.000:
+                    NÓ: Divisão Categórica por 'AgeGroup'
+                      - Se 'AgeGroup' == 'Adulto':
+                        NÓ: Divisão Categórica por 'Embarked'
+                          - Se 'Embarked' == 'S':
+                            NÓ: Divisão Categórica por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                                  - Se 'Title' == 'Mrs':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                              - Se 'IsAlone' == 'False':
+                                NÓ: Divisão Categórica por 'Title'
+                                  - Se 'Title' == 'Mrs':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                                  - Se 'Title' == 'Miss':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+                          - Se 'Embarked' == 'C':
+                            --> PREDIÇÃO: Sobreviveu (classe=1)
+                          - Se 'Embarked' == 'Q':
+                            --> PREDIÇÃO: Sobreviveu (classe=1)
+                      - Se 'AgeGroup' == 'Criança':
+                        --> PREDIÇÃO: Sobreviveu (classe=1)
+                      - Se 'AgeGroup' == 'Adolescente':
+                        --> PREDIÇÃO: Sobreviveu (classe=1)
+                  - Se valor > 56.000:
+                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se valor > 7.000:
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Sex' == 'male':
+    NÓ: Divisão Numérica por 'Age'
+      - Se valor <= 3.250:
+        NÓ: Divisão Numérica por 'FamilySize'
+          - Se valor <= 4.500:
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+          - Se valor > 4.500:
+            NÓ: Divisão Numérica por 'Fare'
+              - Se valor <= 26.231:
+                --> PREDIÇÃO: Não Sobreviveu (classe=0)
+              - Se valor > 26.231:
+                NÓ: Divisão Categórica por 'Pclass'
+                  - Se 'Pclass' == '3':
+                    NÓ: Divisão Categórica por 'Embarked'
+                      - Se 'Embarked' == 'S':
+                        NÓ: Divisão Categórica por 'Title'
+                          - Se 'Title' == 'Master':
+                            NÓ: Divisão Categórica por 'IsAlone'
+                              - Se 'IsAlone' == 'False':
+                                NÓ: Divisão Categórica por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Criança':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se valor > 3.250:
+        NÓ: Divisão Numérica por 'Fare'
+          - Se valor <= 379.925:
+            NÓ: Divisão Numérica por 'FamilySize'
+              - Se valor <= 4.000:
+                NÓ: Divisão Categórica por 'Title'
+                  - Se 'Title' == 'Mr':
+                    NÓ: Divisão Categórica por 'Pclass'
+                      - Se 'Pclass' == '2':
+                        NÓ: Divisão Categórica por 'AgeGroup'
+                          - Se 'AgeGroup' == 'Adulto':
+                            NÓ: Divisão Categórica por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão Categórica por 'Embarked'
+                                  - Se 'Embarked' == 'S':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'Embarked' == 'C':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'IsAlone' == 'False':
+                                NÓ: Divisão Categórica por 'Embarked'
+                                  - Se 'Embarked' == 'C':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'Embarked' == 'S':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'AgeGroup' == 'Idoso':
+                            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'AgeGroup' == 'Adolescente':
+                            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                      - Se 'Pclass' == '1':
+                        NÓ: Divisão Categórica por 'AgeGroup'
+                          - Se 'AgeGroup' == 'Adulto':
+                            NÓ: Divisão Categórica por 'IsAlone'
+                              - Se 'IsAlone' == 'False':
+                                NÓ: Divisão Categórica por 'Embarked'
+                                  - Se 'Embarked' == 'S':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'Embarked' == 'C':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão Categórica por 'Embarked'
+                                  - Se 'Embarked' == 'C':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'Embarked' == 'S':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'AgeGroup' == 'Idoso':
+                            NÓ: Divisão Categórica por 'Embarked'
+                              - Se 'Embarked' == 'C':
+                                --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'Embarked' == 'S':
+                                NÓ: Divisão Categórica por 'IsAlone'
+                                  - Se 'IsAlone' == 'True':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'AgeGroup' == 'Adolescente':
+                            NÓ: Divisão Categórica por 'Embarked'
+                              - Se 'Embarked' == 'C':
+                                NÓ: Divisão Categórica por 'IsAlone'
+                                  - Se 'IsAlone' == 'False':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                      - Se 'Pclass' == '3':
+                        NÓ: Divisão Categórica por 'AgeGroup'
+                          - Se 'AgeGroup' == 'Adulto':
+                            NÓ: Divisão Categórica por 'Embarked'
+                              - Se 'Embarked' == 'S':
+                                NÓ: Divisão Categórica por 'IsAlone'
+                                  - Se 'IsAlone' == 'False':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'IsAlone' == 'True':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'Embarked' == 'Q':
+                                NÓ: Divisão Categórica por 'IsAlone'
+                                  - Se 'IsAlone' == 'True':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'IsAlone' == 'False':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'Embarked' == 'C':
+                                NÓ: Divisão Categórica por 'IsAlone'
+                                  - Se 'IsAlone' == 'True':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                                  - Se 'IsAlone' == 'False':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'AgeGroup' == 'Idoso':
+                            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'AgeGroup' == 'Adolescente':
+                            NÓ: Divisão Categórica por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão Categórica por 'Embarked'
+                                  - Se 'Embarked' == 'S':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'IsAlone' == 'False':
+                                --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                  - Se 'Title' == 'Rare':
+                    NÓ: Divisão Categórica por 'Pclass'
+                      - Se 'Pclass' == '2':
+                        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                      - Se 'Pclass' == '1':
+                        NÓ: Divisão Categórica por 'IsAlone'
+                          - Se 'IsAlone' == 'True':
+                            NÓ: Divisão Categórica por 'Embarked'
+                              - Se 'Embarked' == 'C':
+                                NÓ: Divisão Categórica por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                              - Se 'Embarked' == 'S':
+                                NÓ: Divisão Categórica por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+                          - Se 'IsAlone' == 'False':
+                            --> PREDIÇÃO: Sobreviveu (classe=1)
+                  - Se 'Title' == 'Master':
+                    --> PREDIÇÃO: Sobreviveu (classe=1)
+              - Se valor > 4.000:
+                --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se valor > 379.925:
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+============================================================
+
+📊 Realizando previsões no conjunto de teste...
+✅ Previsões concluídas!
+
+==================================================
+MÉTRICAS DE DESEMPENHO DO MODELO c45
+==================================================
+Acurácia (Accuracy): 0.8027
+Precisão (Precision): 0.8387
+Revocação (Recall): 0.6047
+F1-Score: 0.7027
+==================================================
+
+Relatório de Classificação Completo:
+              precision    recall  f1-score   support
+
+           0       0.79      0.93      0.85       137
+           1       0.84      0.60      0.70        86
+
+    accuracy                           0.80       223
+   macro avg       0.81      0.77      0.78       223
+weighted avg       0.81      0.80      0.79       223
+

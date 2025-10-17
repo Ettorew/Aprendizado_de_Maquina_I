@@ -1,0 +1,1154 @@
+✅ Modelo ID3 treinado com sucesso!
+
+============================================================
+ESTRUTURA DA ÁRVORE DE DECISÃO GERADA
+============================================================
+NÓ: Divisão por 'Fare'
+  - Se 'Fare' == '90.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '10.5':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '19.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '2':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '24.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '34.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '26.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '50.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '66.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '31.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '29.0':
+        NÓ: Divisão por 'Sex'
+          - Se 'Sex' == 'male':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se 'Sex' == 'female':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '36.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '35.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '70.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '32.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '57.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '23.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '13.0':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '34.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '2':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '30.0':
+        NÓ: Divisão por 'Sex'
+          - Se 'Sex' == 'male':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se 'Sex' == 'female':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '40.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '36.0':
+        NÓ: Divisão por 'Sex'
+          - Se 'Sex' == 'male':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se 'Sex' == 'female':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '28.0':
+        NÓ: Divisão por 'Sex'
+          - Se 'Sex' == 'female':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+          - Se 'Sex' == 'male':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '50.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '31.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '18.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '42.0':
+        NÓ: Divisão por 'Title'
+          - Se 'Title' == 'Mr':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+          - Se 'Title' == 'Rare':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se 'Title' == 'Mrs':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '24.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '25.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '23.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '19.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '39.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '27.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '38.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '32.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '32.5':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '22.025':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '53.1':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '19.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '27.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '33.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '35.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '39.6875':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '16.1':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '15.2458':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '35.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '29.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '3.5':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '9.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '12.35':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '6.2375':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '31.3875':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '38.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '3.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '5.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '9.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.4333':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '89.1042':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '30.5':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '25.4667':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.6625':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '17.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '38.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '20.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '33.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '26.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '27.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '13.5':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '15.05':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.775':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '19.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '30.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '3':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '33.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '25.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '18.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '74.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '31.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '29.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '22.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.75':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '32.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '21.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '3':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'female':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'Q':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Miss':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '30.5':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '51.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '16.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '22.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '30.0':
+        NÓ: Divisão por 'FamilySize'
+          - Se 'FamilySize' == '1':
+            NÓ: Divisão por 'Pclass'
+              - Se 'Pclass' == '3':
+                NÓ: Divisão por 'Sex'
+                  - Se 'Sex' == 'male':
+                    NÓ: Divisão por 'Embarked'
+                      - Se 'Embarked' == 'Q':
+                        NÓ: Divisão por 'Title'
+                          - Se 'Title' == 'Mr':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se 'FamilySize' == '2':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '29.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '45.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '65.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '40.5':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '70.5':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.225':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.925':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '44.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '32.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '3':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '31.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '39.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '3':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '23.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '28.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '25.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '26.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '20.0':
+        NÓ: Divisão por 'FamilySize'
+          - Se 'FamilySize' == '2':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+          - Se 'FamilySize' == '1':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '17.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '37.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '30.0708':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '23.25':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.8958':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '11.1333':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '71.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '512.3292':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '86.5':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '79.2':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '227.525':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '56.4958':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '26.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '32.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '28.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.4958':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '52.5542':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '30.6958':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '6.75':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '113.275':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '26.0':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '33.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '36.5':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '39.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '64.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '42.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '54.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '24.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '44.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '16.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '35.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '29.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '28.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '19.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '37.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '27.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '3.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '32.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '26.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '40.125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.05':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '22.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '43.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '35.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '29.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '16.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '3':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adolescente':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '50.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '45.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '34.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '24.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '44.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '32.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '51.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '19.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '3':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '20.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '12.525':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '83.475':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.8792':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '0.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.2292':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '30.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '3':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'C':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '28.5':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '22.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '20.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '13.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '35.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '14.4583':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '29.7':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '37.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '58.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.7958':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '22.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '24.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '18.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '110.8833':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '9.5':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '29.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '24.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '28.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '16.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '27.7208':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '18.75':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '65.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '15.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '30.0':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '26.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '29.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '80.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '19.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '16.7':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '27.75':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '39.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.8542':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '18.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '26.0':
+        NÓ: Divisão por 'Sex'
+          - Se 'Sex' == 'male':
+            --> PREDIÇÃO: Não Sobreviveu (classe=0)
+          - Se 'Sex' == 'female':
+            --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '32.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '48.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '31.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '23.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '19.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '14.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '20.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '28.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '27.9':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '61.3792':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '37.0042':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.725':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '26.55':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '48.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '60.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '56.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '30.0':
+        NÓ: Divisão por 'Pclass'
+          - Se 'Pclass' == '1':
+            NÓ: Divisão por 'Sex'
+              - Se 'Sex' == 'male':
+                NÓ: Divisão por 'Embarked'
+                  - Se 'Embarked' == 'S':
+                    NÓ: Divisão por 'Title'
+                      - Se 'Title' == 'Mr':
+                        NÓ: Divisão por 'FamilySize'
+                          - Se 'FamilySize' == '1':
+                            NÓ: Divisão por 'IsAlone'
+                              - Se 'IsAlone' == 'True':
+                                NÓ: Divisão por 'AgeGroup'
+                                  - Se 'AgeGroup' == 'Adulto':
+                                    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '51.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '45.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '35.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '65.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '23.45':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '262.375':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '69.55':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '20.575':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '1.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '26.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '25.925':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '27.0':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '135.6333':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '34.6542':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '9.8375':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '29.125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '24.0':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '14.4':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '15.7417':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '6.45':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '247.5208':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '31.275':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '18.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '9.8458':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.25':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '29.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '14.5':
+    NÓ: Divisão por 'Pclass'
+      - Se 'Pclass' == '3':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Pclass' == '2':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '15.9':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '15.85':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '221.7792':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.4583':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '55.9':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '82.1708':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.55':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '23.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '42.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '34.375':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '21.075':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '153.4625':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.7375':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '9.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '9.825':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '71.2833':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '8.3625':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '12.475':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '33.0':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '134.5':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.1417':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '19.5':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '9.8417':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '57.9792':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '52.0':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '23.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '91.0792':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '25.9292':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '9.4833':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '24.15':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '30.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '39.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '10.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '36.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '21.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '108.9':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '78.85':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '26.2875':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '80.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '26.25':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '20.2125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.7292':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '9.225':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '15.5':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '9.5875':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '63.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '37.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '19.2583':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '14.4542':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.8':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.65':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '106.425':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '49.5042':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.7333':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '8.4042':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '69.3':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '22.3583':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '35.5':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '56.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '45.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '32.5':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.0542':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '21.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '81.8583':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '57.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '28.5':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '79.65':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '93.5':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '15.0458':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '36.75':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '19.9667':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '11.5':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '59.4':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '77.2875':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '73.5':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '15.55':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.3125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '76.7292':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '164.8667':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '77.9583':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '151.55':
+    NÓ: Divisão por 'Age'
+      - Se 'Age' == '0.92':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Age' == '25.0':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Age' == '22.0':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '55.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.05':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '4.0125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.7125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '12.2875':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '76.2917':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '20.525':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '11.2417':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '120.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '211.3375':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '51.8625':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '18.7875':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.8292':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '33.5':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '10.1708':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '22.525':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '26.2833':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '42.4':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '16.0':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '56.9292':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '61.9792':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '50.4958':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '146.5208':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '8.6833':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '25.5875':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '133.65':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '6.4375':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '46.9':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '10.5167':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '14.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '9.35':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '26.3875':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '20.25':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.0292':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '10.4625':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '83.1583':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '15.75':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '31.0':
+    NÓ: Divisão por 'Embarked'
+      - Se 'Embarked' == 'C':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+      - Se 'Embarked' == 'S':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '13.4167':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '15.1':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '12.65':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '13.8583':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '39.6':
+    NÓ: Divisão por 'Sex'
+      - Se 'Sex' == 'male':
+        --> PREDIÇÃO: Não Sobreviveu (classe=0)
+      - Se 'Sex' == 'female':
+        --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '63.3583':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '7.0458':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '41.5792':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '6.95':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '50.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '78.2667':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '6.4958':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.3':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '21.6792':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '7.5208':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '66.6':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '8.5167':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '12.875':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.1583':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '6.975':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '5.0':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '49.5':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '28.7125':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '8.1375':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+  - Se 'Fare' == '13.8625':
+    --> PREDIÇÃO: Sobreviveu (classe=1)
+  - Se 'Fare' == '38.5':
+    --> PREDIÇÃO: Não Sobreviveu (classe=0)
+============================================================
+
+📊 Realizando previsões no conjunto de teste...
+✅ Previsões concluídas!
+
+==================================================
+MÉTRICAS DE DESEMPENHO DO MODELO ID3
+==================================================
+Acurácia (Accuracy): 0.6771
+Precisão (Precision): 0.6346
+Revocação (Recall): 0.3837
+F1-Score: 0.4783
+==================================================
+
+Relatório de Classificação Completo:
+              precision    recall  f1-score   support
+
+           0       0.69      0.86      0.77       137
+           1       0.63      0.38      0.48        86
+
+    accuracy                           0.68       223
+   macro avg       0.66      0.62      0.62       223
+weighted avg       0.67      0.68      0.66       223
+
