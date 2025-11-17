@@ -1,0 +1,23 @@
+codigo|descricao|tipo
+consumo_carne_vermelha|Em quantos dias da semana o(a) Sr(a) costuma comer carne vermelha (boi, porco, cabrito, bode, ovelha etc.)? |int64
+consumo_frango|Em quantos dias da semana o(a) Sr(a) costuma comer frango/galinha? |int64
+consumo_peixe|Em quantos dias da semana o(a) Sr(a) costuma comer peixe? |int64
+consumo_leite|Em quantos dias da semana o(a) Sr(a) costuma tomar leite? (de origem animal: vaca, cabra, búfala etc.) |int64
+consumo_verdura_legume|Em quantos dias da semana, o(a) Sr(a) costuma comer pelo menos um tipo de verdura ou legume (sem contar batata, mandioca, cará ou inhame) como alface, tomate, couve, cenoura, chuchu, berinjela, abobrinha? |int64
+consumo_frutas|Em quantos dias da semana o(a) Sr(a) costuma comer frutas? |int64
+consumo_doces|Em quantos dias da semana o(a) Sr(a) costuma comer alimentos doces como biscoito/bolacha recheado, chocolate, gelatina, balas e outros?|int64
+consumo_substitui_almoco|Em quantos dias da semana o(a) Sr(a) costuma substituir a refeição do almoço por lanches rápidos como sanduíches, salgados, pizza, cachorro quente, etc? |int64
+percepcao_consumo_sal|Considerando a comida preparada na hora e os alimentos industrializados, o(a) Sr(a) acha que o seu consumo de sal é:|int64
+freq_bebida_alcoolica|Com que frequência o(a) Sr(a) costuma consumir alguma bebida alcoólica?|int64
+fumante_atual|Atualmente, o(a) Sr(a) fuma algum produto do tabaco? |int64
+diag_hipertensao|Algum médico já lhe deu o diagnóstico de hipertensão arterial (pressão alta)? |int64
+diag_doenca_coracao|Algum médico já lhe deu o diagnóstico de uma doença do coração, tal como infarto, angina, insuficiência cardíaca ou outra?|int64
+diag_colesterol_alto|Algum médico já lhe deu o diagnóstico de colesterol alto? |int64
+autoavaliacao_saude|Em geral, como o(a) Sr(a) avalia a sua saúde|int64
+freq_problemas_sono|Nas duas últimas semanas, com que frequência o(a) Sr(a) teve problemas no sono, como dificuldade para adormecer, acordar frequentemente à noite ou dormir mais do que de costume?|int64
+freq_cansaco|Nas duas últimas semanas, com que frequência o(a) Sr(a) teve problemas por não se sentir descansado(a) e disposto(a) durante o dia, sentindo-se cansado(a), sem ter energia? |int64
+idade|Idade do morador na data de referência|int64
+sexo|Sexo|int64
+bebidas_acucar_dias_semana||float64
+atividade_fisica_categoria||int64
+IMC_Categoria||int64

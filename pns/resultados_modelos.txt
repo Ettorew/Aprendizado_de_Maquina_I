@@ -1,0 +1,275 @@
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 25 (5 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: KNN_SMOTE
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.7082
+Melhores parâmetros: OrderedDict({'model__metric': 'manhattan', 'model__n_neighbors': 31, 'model__weights': 'uniform'})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.53      0.66      0.59      4770
+           2       0.86      0.78      0.82     12978
+
+    accuracy                           0.75     17748
+   macro avg       0.70      0.72      0.71     17748
+weighted avg       0.77      0.75      0.76     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 25 (5 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: KNN_ADASYN
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.7047
+Melhores parâmetros: OrderedDict({'model__metric': 'manhattan', 'model__n_neighbors': 31, 'model__weights': 'distance'})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.52      0.67      0.59      4770
+           2       0.86      0.77      0.82     12978
+
+    accuracy                           0.75     17748
+   macro avg       0.69      0.72      0.70     17748
+weighted avg       0.77      0.75      0.75     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 25 (5 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: KNN_RUS
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.7070
+Melhores parâmetros: OrderedDict({'model__metric': 'manhattan', 'model__n_neighbors': 31, 'model__weights': 'distance'})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.51      0.72      0.60      4770
+           2       0.88      0.74      0.81     12978
+
+    accuracy                           0.74     17748
+   macro avg       0.70      0.73      0.70     17748
+weighted avg       0.78      0.74      0.75     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 25 (5 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: KNN_SMOTEENN
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.6740
+Melhores parâmetros: OrderedDict({'model__metric': 'manhattan', 'model__n_neighbors': 27, 'model__weights': 'distance'})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.46      0.81      0.58      4770
+           2       0.90      0.65      0.75     12978
+
+    accuracy                           0.69     17748
+   macro avg       0.68      0.73      0.67     17748
+weighted avg       0.78      0.69      0.71     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: DecisionTree_SMOTE
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.6987
+Melhores parâmetros: OrderedDict({'model__criterion': 'entropy', 'model__max_depth': 6, 'model__min_samples_leaf': 1, 'model__min_samples_split': 19})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.51      0.69      0.59      4770
+           2       0.87      0.76      0.81     12978
+
+    accuracy                           0.74     17748
+   macro avg       0.69      0.72      0.70     17748
+weighted avg       0.77      0.74      0.75     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: DecisionTree_ADASYN
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.6928
+Melhores parâmetros: OrderedDict({'model__criterion': 'entropy', 'model__max_depth': 8, 'model__min_samples_leaf': 20, 'model__min_samples_split': 19})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.50      0.71      0.59      4770
+           2       0.87      0.73      0.80     12978
+
+    accuracy                           0.73     17748
+   macro avg       0.69      0.72      0.69     17748
+weighted avg       0.77      0.73      0.74     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: DecisionTree_RUS
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.7069
+Melhores parâmetros: OrderedDict({'model__criterion': 'gini', 'model__max_depth': 6, 'model__min_samples_leaf': 1, 'model__min_samples_split': 8})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.50      0.77      0.61      4770
+           2       0.90      0.72      0.80     12978
+
+    accuracy                           0.73     17748
+   macro avg       0.70      0.75      0.70     17748
+weighted avg       0.79      0.73      0.75     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: DecisionTree_SMOTEENN
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.6552
+Melhores parâmetros: OrderedDict({'model__criterion': 'entropy', 'model__max_depth': 5, 'model__min_samples_leaf': 7, 'model__min_samples_split': 2})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.45      0.85      0.59      4770
+           2       0.92      0.62      0.74     12978
+
+    accuracy                           0.68     17748
+   macro avg       0.68      0.73      0.66     17748
+weighted avg       0.79      0.68      0.70     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: RandomForest_SMOTE
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.7158
+Melhores parâmetros: OrderedDict({'model__criterion': 'entropy', 'model__max_depth': 28, 'model__min_samples_leaf': 1, 'model__min_samples_split': 20, 'model__n_estimators': 300})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.55      0.66      0.60      4770
+           2       0.86      0.80      0.83     12978
+
+    accuracy                           0.76     17748
+   macro avg       0.71      0.73      0.72     17748
+weighted avg       0.78      0.76      0.77     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: RandomForest_ADASYN
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.7098
+Melhores parâmetros: OrderedDict({'model__criterion': 'gini', 'model__max_depth': 23, 'model__min_samples_leaf': 1, 'model__min_samples_split': 20, 'model__n_estimators': 170})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.53      0.66      0.59      4770
+           2       0.86      0.79      0.82     12978
+
+    accuracy                           0.75     17748
+   macro avg       0.70      0.73      0.71     17748
+weighted avg       0.78      0.75      0.76     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: RandomForest_RUS
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.7132
+Melhores parâmetros: OrderedDict({'model__criterion': 'entropy', 'model__max_depth': 13, 'model__min_samples_leaf': 12, 'model__min_samples_split': 16, 'model__n_estimators': 181})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.51      0.79      0.62      4770
+           2       0.90      0.72      0.80     12978
+
+    accuracy                           0.74     17748
+   macro avg       0.71      0.76      0.71     17748
+weighted avg       0.80      0.74      0.75     17748
+
+Carregando dados originais (desbalanceados)...
+Dados de treino: (70988, 21), Dados de teste: (17748, 21)
+
+Gerando pipelines...
+Total de pipelines criados: 20 (4 modelos x 5 balancers)
+
+--- EXEMPLO DE EXECUÇÃO ---
+Rodando BayesSearchCV para: RandomForest_SMOTEENN
+Iniciando otimização (BayesSearchCV.fit)...
+Otimização concluída!
+Melhor F1-Macro (CV): 0.6804
+Melhores parâmetros: OrderedDict({'model__criterion': 'entropy', 'model__max_depth': 50, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 300})
+
+Avaliação no conjunto de TESTE (dados reais):
+              precision    recall  f1-score   support
+
+           1       0.46      0.83      0.59      4770
+           2       0.91      0.65      0.76     12978
+
+    accuracy                           0.69     17748
+   macro avg       0.69      0.74      0.67     17748
+weighted avg       0.79      0.69      0.71     17748
