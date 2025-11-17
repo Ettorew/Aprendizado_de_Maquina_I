@@ -1,0 +1,13 @@
+Modelo,Balanceador,F1-Macro,Recall (Cls. 1),Precisão (Cls. 1)
+KNN,SMOTE,0.71,0.66,0.53
+KNN,ADASYN,0.7,0.67,0.52
+KNN,RUS,0.7,0.72,0.51
+KNN,SMOTEENN,0.67,0.81,0.46
+DecisionTree,SMOTE,0.7,0.69,0.51
+DecisionTree,ADASYN,0.69,0.71,0.5
+DecisionTree,RUS,0.7,0.77,0.5
+DecisionTree,SMOTEENN,0.66,0.85,0.45
+RandomForest,SMOTE,0.72,0.66,0.55
+RandomForest,ADASYN,0.71,0.66,0.53
+RandomForest,RUS,0.71,0.79,0.51
+RandomForest,SMOTEENN,0.67,0.83,0.46
